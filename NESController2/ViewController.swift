@@ -16,11 +16,19 @@ class ViewController: UIViewController {
         case Left = 1, Right, Fire, Jump
     }
     
+    var username = "no_username"
+    
+    @IBOutlet weak var textview: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        textview.text = username
+        textview.textAlignment = .Center
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -48,7 +56,7 @@ class ViewController: UIViewController {
                 println("Untagged button pressed")
                 var buttonPressed = "unknownButtonPressed"
             }
-            var NESparams = ["buttonPressed":buttonPressed, "password":"password"] as Dictionary<String, String>
+            var NESparams = ["buttonPressed":buttonPressed, "username":username] as Dictionary<String, String>
             
             let succes = sendHttpPost(url, params: NESparams)
             if (succes == true){
