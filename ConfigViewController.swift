@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ConfigViewController: ViewController {
+class ConfigViewController: UIViewController {
 
+    @IBOutlet weak var ipadressfield: UITextField!
+    
+    var ip: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ipadressfield.text = ip
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

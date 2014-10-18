@@ -14,6 +14,7 @@
 		0707DE4719F0039A0078D787 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707DE4519F0039A0078D787 /* LaunchScreen.xib */; };
 		0707DE5319F0039A0078D787 /* NESController2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707DE5219F0039A0078D787 /* NESController2Tests.swift */; };
 		07341D2419F2A5B1009F7093 /* HttpRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */; };
+		075686F019F2FDE1000FEA37 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075686EF19F2FDE1000FEA37 /* ConfigViewController.swift */; };
 		079BE0D619F08D7700D5947D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BE0D519F08D7700D5947D /* LoginViewController.swift */; };
 		07A2EECB19F2B8FD00B480DD /* background_nes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07A2EECA19F2B8FD00B480DD /* background_nes.jpg */; };
 		2ACE3A8819F2C41C0006FF11 /* left_d_pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE3A8719F2C41C0006FF11 /* left_d_pad.png */; };
@@ -42,6 +43,7 @@
 		0707DE5119F0039A0078D787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0707DE5219F0039A0078D787 /* NESController2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESController2Tests.swift; sourceTree = "<group>"; };
 		07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestSender.swift; sourceTree = "<group>"; };
+		075686EF19F2FDE1000FEA37 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigViewController.swift; path = ../ConfigViewController.swift; sourceTree = "<group>"; };
 		079BE0D519F08D7700D5947D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07A2EECA19F2B8FD00B480DD /* background_nes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_nes.jpg; sourceTree = "<group>"; };
 		2ACE3A8719F2C41C0006FF11 /* left_d_pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_d_pad.png; path = Images.xcassets/left_d_pad.imageset/left_d_pad.png; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		0707DE3919F0039A0078D787 /* NESController2 */ = {
 			isa = PBXGroup;
 			children = (
+				075686EF19F2FDE1000FEA37 /* ConfigViewController.swift */,
 				0707DE3C19F0039A0078D787 /* AppDelegate.swift */,
 				0707DE3E19F0039A0078D787 /* ViewController.swift */,
 				07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */,
@@ -233,6 +236,7 @@
 				07341D2419F2A5B1009F7093 /* HttpRequestSender.swift in Sources */,
 				079BE0D619F08D7700D5947D /* LoginViewController.swift in Sources */,
 				0707DE3F19F0039A0078D787 /* ViewController.swift in Sources */,
+				075686F019F2FDE1000FEA37 /* ConfigViewController.swift in Sources */,
 				0707DE3D19F0039A0078D787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

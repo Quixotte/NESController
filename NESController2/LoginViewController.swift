@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("loaded login view")

@@ -10,7 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let myurl = "http://192.168.2.25:8001/marioserver"
+    let prefix = "http://"
+    let ip = "192.168.2.25:8001"
+    let serveradress = "/marioserver"
+    
+    let host = "192.168.2.25:8001"
     
     let queue = NSOperationQueue()
     
@@ -65,8 +69,20 @@ class ViewController: UIViewController {
         if (queue.operationCount == 0)
         {
             var NESparams = ["option":"pressButtons",  "command":command, "name":username] as Dictionary<String, String>
+            let myurl = prefix + ip + serveradress
             let requestSender = HttpRequestSender(params: NESparams, url: myurl)
             queue.addOperation(requestSender)
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "configSegue"{
+            let vc = segue.destinationViewController as ConfigViewController
+            vc.ip = ip
+            
+        }
+        else {
+            return
         }
     }
 
@@ -150,13 +166,6 @@ class ViewController: UIViewController {
             default:
                 println("Untagged button pressed")
                 buttonPressed = "unknownButtonPressed"
-            }
-            var NESparams = ["option":"pressButtons",  "command":buttonPressed, "name":username] as Dictionary<String, String>
-            
-            if (queue.operationCount == 0)
-            {
-                let requestSender = HttpRequestSender(params: NESparams, url: myurl)
-                queue.addOperation(requestSender)
             }
         }
     }
