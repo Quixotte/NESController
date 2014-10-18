@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     let testImage = UIImage(named: "background_nes.jpg")
     let leftImage = UIImage(named: "left_d_pad.png")
-        let leftImageHighlighted = UIImage(named: "left_d_pad_pressed.png")
+    let leftImageHighlighted = UIImage(named: "left_d_pad_pressed.png")
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
