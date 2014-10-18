@@ -13,6 +13,7 @@
 		0707DE4419F0039A0078D787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0707DE4319F0039A0078D787 /* Images.xcassets */; };
 		0707DE4719F0039A0078D787 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707DE4519F0039A0078D787 /* LaunchScreen.xib */; };
 		0707DE5319F0039A0078D787 /* NESController2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707DE5219F0039A0078D787 /* NESController2Tests.swift */; };
+		07341D2419F2A5B1009F7093 /* HttpRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */; };
 		079BE0D619F08D7700D5947D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BE0D519F08D7700D5947D /* LoginViewController.swift */; };
 		07ED6C5519F068CB00AA30A0 /* rightarrow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		0707DE4C19F0039A0078D787 /* NESController2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESController2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0707DE5119F0039A0078D787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0707DE5219F0039A0078D787 /* NESController2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESController2Tests.swift; sourceTree = "<group>"; };
+		07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestSender.swift; sourceTree = "<group>"; };
 		079BE0D519F08D7700D5947D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rightarrow.jpeg; path = NESController2/Images.xcassets/rightarrow.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 			children = (
 				0707DE3C19F0039A0078D787 /* AppDelegate.swift */,
 				0707DE3E19F0039A0078D787 /* ViewController.swift */,
+				07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */,
 				0707DE4019F0039A0078D787 /* Main.storyboard */,
 				079BE0D519F08D7700D5947D /* LoginViewController.swift */,
 				0707DE4319F0039A0078D787 /* Images.xcassets */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07341D2419F2A5B1009F7093 /* HttpRequestSender.swift in Sources */,
 				079BE0D619F08D7700D5947D /* LoginViewController.swift in Sources */,
 				0707DE3F19F0039A0078D787 /* ViewController.swift in Sources */,
 				0707DE3D19F0039A0078D787 /* AppDelegate.swift in Sources */,

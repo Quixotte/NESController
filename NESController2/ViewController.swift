@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     let myurl = "http://192.168.2.25:8001/marioserver"
     
+    let queue = NSOperationQueue()
+    
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
@@ -26,6 +28,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -59,10 +63,15 @@ class ViewController: UIViewController {
             }
             var NESparams = ["option":"pressButtons",  "command":buttonPressed, "name":username] as Dictionary<String, String>
             
-            post(NESparams, url: myurl)
+            if (queue.operationCount == 0)
+            {
+                let requestSender = HttpRequestSender(params: NESparams, url: myurl)
+                queue.addOperation(requestSender)
+            }
         }
     }
 
+    
     
     func post(params : Dictionary<String, String>, url : String) {
         
@@ -82,7 +91,6 @@ class ViewController: UIViewController {
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
             println(NSString(data: data, encoding: NSUTF8StringEncoding))
         }
-        
         task.resume()
     }
     
