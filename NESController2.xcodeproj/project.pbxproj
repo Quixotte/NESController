@@ -16,6 +16,8 @@
 		07341D2419F2A5B1009F7093 /* HttpRequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */; };
 		079BE0D619F08D7700D5947D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BE0D519F08D7700D5947D /* LoginViewController.swift */; };
 		07A2EECB19F2B8FD00B480DD /* background_nes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07A2EECA19F2B8FD00B480DD /* background_nes.jpg */; };
+		2ACE3A8819F2C41C0006FF11 /* left_d_pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE3A8719F2C41C0006FF11 /* left_d_pad.png */; };
+		2ACE3A8A19F2C5AB0006FF11 /* left_d_pad_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE3A8919F2C5AB0006FF11 /* left_d_pad_pressed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestSender.swift; sourceTree = "<group>"; };
 		079BE0D519F08D7700D5947D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		07A2EECA19F2B8FD00B480DD /* background_nes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_nes.jpg; sourceTree = "<group>"; };
+		2ACE3A8719F2C41C0006FF11 /* left_d_pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_d_pad.png; path = Images.xcassets/left_d_pad.imageset/left_d_pad.png; sourceTree = "<group>"; };
+		2ACE3A8919F2C5AB0006FF11 /* left_d_pad_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left_d_pad_pressed.png; path = Images.xcassets/left_d_pad_pressed.imageset/left_d_pad_pressed.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		0707DE3A19F0039A0078D787 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2ACE3A8919F2C5AB0006FF11 /* left_d_pad_pressed.png */,
+				2ACE3A8719F2C41C0006FF11 /* left_d_pad.png */,
 				07A2EECA19F2B8FD00B480DD /* background_nes.jpg */,
 				0707DE3B19F0039A0078D787 /* Info.plist */,
 			);
@@ -201,8 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACE3A8A19F2C5AB0006FF11 /* left_d_pad_pressed.png in Resources */,
 				0707DE4219F0039A0078D787 /* Main.storyboard in Resources */,
 				0707DE4719F0039A0078D787 /* LaunchScreen.xib in Resources */,
+				2ACE3A8819F2C41C0006FF11 /* left_d_pad.png in Resources */,
 				07A2EECB19F2B8FD00B480DD /* background_nes.jpg in Resources */,
 				0707DE4419F0039A0078D787 /* Images.xcassets in Resources */,
 			);

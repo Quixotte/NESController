@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     let queue = NSOperationQueue()
     
     let testImage = UIImage(named: "background_nes.jpg")
-    
+    let leftImage = UIImage(named: "left_d_pad.png")
+        let leftImageHighlighted = UIImage(named: "left_d_pad_pressed.png")
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     var username = "no_username"
     
     @IBOutlet weak var textview: UITextView!
+    @IBOutlet weak var leftButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -32,10 +34,28 @@ class ViewController: UIViewController {
         textview.textAlignment = .Center
         let imageView = UIImageView(image: testImage)
         self.view.addSubview(imageView)
-        
+        self.leftButton.setBackgroundImage(leftImage, forState:.Normal)
+        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Highlighted)
+        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Selected)
+        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Reserved)
+                self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Disabled)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func touchDown(sender: AnyObject) {
+        
+    }
+    @IBAction func touchUpOutside(sender: AnyObject) {
+                touchUp(sender)
+    }
+    @IBAction func touchUpInside(sender: AnyObject) {
+        touchUp(sender)
+    }
+    
+    func touchUp(sender: AnyObject)
+    {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -165,12 +165,15 @@
                                     <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
                                     <constraint firstAttribute="height" constant="75" id="gT4-FQ-kB1"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="left_d_pad">
+                                <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5v1-sw-Ez6"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="0NQ-bH-oFh"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="59w-KU-O6J"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="9Ig-bX-kPp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,6 +198,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0GB-cg-N6G"/>
                     <connections>
+                        <outlet property="leftButton" destination="LQb-26-bd1" id="0YZ-5x-qHM"/>
                         <outlet property="textview" destination="qBK-wl-t2W" id="hoc-D3-nJ3"/>
                     </connections>
                 </viewController>
@@ -223,7 +227,6 @@
     </scenes>
     <resources>
         <image name="background_nes" width="535" height="189"/>
-        <image name="left_d_pad" width="295" height="200"/>
         <image name="nes_red_button" width="183" height="175"/>
         <image name="right_d_pad" width="296" height="198"/>
     </resources>
