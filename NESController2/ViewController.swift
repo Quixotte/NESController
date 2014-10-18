@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     var username = "no_username"
     
     @IBOutlet weak var textview: UITextView!
-    @IBOutlet weak var leftButton: UIButton!
     
     var pressedLeft = true;
     var pressedRight = false;
@@ -40,14 +39,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
-        self.leftButton.setBackgroundImage(leftImage, forState:.Normal)
-        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Highlighted)
-        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Selected)
-        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Reserved)
-        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Disabled)
+
         // Do any additional setup after loading the view, typically from a nib.
-        
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
 
 
@@ -93,7 +87,6 @@ class ViewController: UIViewController {
     
     @IBAction func touchDown(sender: AnyObject) {
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
-
             switch(buttonType)
                 {
             case .Left:
@@ -141,31 +134,6 @@ class ViewController: UIViewController {
                 pressedJump = false;
             default:
                 println("Released untagged butto ")
-            }
-        }
-    }
-    
-    @IBAction func pressed(sender: AnyObject) {
-        
-        if let buttonType = ButtonTypes.fromRaw(sender.tag){
-            var buttonPressed = "noButtonPressed"
-            switch(buttonType)
-                {
-            case .Left:
-                println("Pressed Left")
-                buttonPressed = "left"
-            case .Right:
-                println("Pressed Right")
-                buttonPressed = "right"
-            case .Fire:
-                println("Pressed Fire")
-                buttonPressed = "fire"
-            case .Jump:
-                println("Pressed Jump")
-                buttonPressed = "jump"
-            default:
-                println("Untagged button pressed")
-                buttonPressed = "unknownButtonPressed"
             }
         }
     }

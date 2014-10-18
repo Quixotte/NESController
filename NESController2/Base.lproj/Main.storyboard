@@ -43,7 +43,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.setMasksBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="loginSegue" id="3QL-eD-Zj2"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="3QL-eD-Zj2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,15 +103,22 @@
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="0LF-2Y-z0K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
                                 <rect key="frame" x="138" y="262" width="100" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="IYD-G2-RXO"/>
                                 </constraints>
-                                <state key="normal" title="Right" backgroundImage="right_d_pad">
+                                <state key="normal" title="Right" backgroundImage="nes_red_button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="svB-M8-3n4"/>
                                     <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q5c-UJ-quY"/>
@@ -156,11 +163,11 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="JSj-IQ-Qk2"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ce5-qB-oky"/>
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="IDf-FI-UmA"/>
-                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j30-dG-3WP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
                                 <rect key="frame" x="38" y="262" width="100" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
@@ -208,7 +215,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leftButton" destination="LQb-26-bd1" id="0YZ-5x-qHM"/>
                         <outlet property="textview" destination="qBK-wl-t2W" id="hoc-D3-nJ3"/>
                     </connections>
                 </viewController>
@@ -237,6 +243,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Zat-DJ-CBv">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGh-aj-8uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="44t-ge-0h1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0w0-yl-mje">
@@ -248,7 +255,6 @@
                         <segue destination="lHk-eH-mTz" kind="relationship" relationship="rootViewController" id="fEl-dE-Bsr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oGh-aj-8uC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-229" y="-57"/>
         </scene>
@@ -256,6 +262,5 @@
     <resources>
         <image name="background_nes" width="535" height="189"/>
         <image name="nes_red_button" width="183" height="175"/>
-        <image name="right_d_pad" width="296" height="198"/>
     </resources>
 </document>
