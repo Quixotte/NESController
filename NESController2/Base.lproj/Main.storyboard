@@ -101,12 +101,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S8Q-P0-Ch7"/>
-                                    <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="2hE-OX-FCj"/>
-                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lij-8P-tJv"/>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="PXD-Jc-fAm"/>
-                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2fB-AE-Mgt"/>
-                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1kH-XP-SRu"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yfj-aQ-eck"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="0LF-2Y-z0K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
@@ -114,12 +111,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="IYD-G2-RXO"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="right_d_pad">
+                                <state key="normal" title="Right" backgroundImage="right_d_pad">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="svB-M8-3n4"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q5c-UJ-quY"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="9PQ-xx-gJz"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBK-wl-t2W">
@@ -159,9 +158,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="q3z-B0-ilw"/>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="JSj-IQ-Qk2"/>
-                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v31-li-1qT"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="IDf-FI-UmA"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j30-dG-3WP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
@@ -170,12 +169,11 @@
                                     <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
                                     <constraint firstAttribute="height" constant="75" id="gT4-FQ-kB1"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" title="Left">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5v1-sw-Ez6"/>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="0NQ-bH-oFh"/>
                                     <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="59w-KU-O6J"/>
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="9Ig-bX-kPp"/>
