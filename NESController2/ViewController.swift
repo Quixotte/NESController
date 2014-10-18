@@ -79,24 +79,22 @@ class ViewController: UIViewController {
     func touchUp(sender: AnyObject)
     {
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
-            var buttonPressed = "noButtonPressed"
             switch(buttonType)
                 {
             case .Left:
-                println("Unpressed Left")
-                
+                println("Released Left")
+                pressedLeft = false;
             case .Right:
-                println("Unpressed Right")
-                buttonPressed = "right"
+                println("Released Right")
+                pressedRight = false;
             case .Fire:
-                println("Unpressed Fire")
-                buttonPressed = "fire"
+                println("Released Fire")
+                pressedFire = false;
             case .Jump:
-                println("Unpressed Jump")
-                buttonPressed = "jump"
+                println("Released Jump")
+                pressedJump = false;
             default:
-                println("Unpressed untagged button")
-                buttonPressed = "unknownButtonPressed"
+                println("Released untagged butto ")
             }
         }
     }

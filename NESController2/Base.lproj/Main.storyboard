@@ -103,6 +103,10 @@
                                 <connections>
                                     <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S8Q-P0-Ch7"/>
                                     <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="2hE-OX-FCj"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lij-8P-tJv"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="PXD-Jc-fAm"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2fB-AE-Mgt"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1kH-XP-SRu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
@@ -115,7 +119,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pXh-ry-SPf"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="svB-M8-3n4"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBK-wl-t2W">
@@ -155,8 +159,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EIn-Q0-vDy"/>
                                     <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="q3z-B0-ilw"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="JSj-IQ-Qk2"/>
+                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v31-li-1qT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
