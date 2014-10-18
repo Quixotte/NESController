@@ -42,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NESController2/ViewController.swift"
-            timestampString = "435356520.542076"
+            timestampString = "435357643.291407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "touchDown(_:)"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "touchUpInside(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NESController2/ViewController.swift"
-            timestampString = "435356520.542076"
+            timestampString = "435357643.291407"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "touchUpInside(_:)"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "touchUp(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

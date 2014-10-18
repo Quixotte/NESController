@@ -69,16 +69,6 @@ class ViewController: UIViewController {
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "configSegue"{
-            let vc = segue.destinationViewController as ConfigViewController
-            vc.ip = ip
-            
-        }
-        else {
-            return
-        }
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
