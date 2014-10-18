@@ -80,26 +80,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
-                                <rect key="frame" x="17" y="262" width="100" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
-                                    <constraint firstAttribute="height" constant="75" id="gT4-FQ-kB1"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="leftarrow">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5v1-sw-Ez6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-4p-Jmo">
                                 <rect key="frame" x="484" y="262" width="100" height="75"/>
                                 <color key="backgroundColor" red="0.89438264270000001" green="0.20979345939999999" blue="0.20979345939999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,7 +87,7 @@
                                     <constraint firstAttribute="height" constant="75" id="BKC-iD-hpU"/>
                                     <constraint firstAttribute="width" constant="100" id="GLn-bf-DFZ"/>
                                 </constraints>
-                                <state key="normal" title="Jump">
+                                <state key="normal" title="Jump" backgroundImage="nes_red_button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,11 +103,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
-                                <rect key="frame" x="137" y="262" width="100" height="75"/>
+                                <rect key="frame" x="138" y="262" width="100" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="IYD-G2-RXO"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="rightarrow">
+                                <state key="normal" backgroundImage="right_d_pad">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -167,7 +147,7 @@
                                     <constraint firstAttribute="width" constant="100" id="kQS-4K-sTV"/>
                                     <constraint firstAttribute="height" constant="75" id="v0d-Qw-GRD"/>
                                 </constraints>
-                                <state key="normal" title="Fire">
+                                <state key="normal" title="Fire" backgroundImage="nes_red_button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -180,6 +160,26 @@
                                 <connections>
                                     <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EIn-Q0-vDy"/>
                                     <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="q3z-B0-ilw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
+                                <rect key="frame" x="38" y="262" width="100" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
+                                    <constraint firstAttribute="height" constant="75" id="gT4-FQ-kB1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="left_d_pad">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5v1-sw-Ez6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -227,7 +227,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="leftarrow" width="225" height="225"/>
-        <image name="rightarrow" width="225" height="225"/>
+        <image name="left_d_pad" width="295" height="200"/>
+        <image name="nes_red_button" width="183" height="175"/>
+        <image name="right_d_pad" width="296" height="198"/>
     </resources>
 </document>
