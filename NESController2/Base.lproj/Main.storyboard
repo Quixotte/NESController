@@ -119,6 +119,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S8Q-P0-Ch7"/>
+                                    <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="2hE-OX-FCj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
@@ -159,6 +160,8 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bWq-B1-1d9"/>
+                                    <action selector="released:" destination="vXZ-lx-hvc" eventType="touchCancel" id="F0F-Dm-9q3"/>
+                                    <action selector="released:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pNy-NP-sEc"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBK-wl-t2W">

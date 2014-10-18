@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         println("loaded login view")
-        username?.text = "asdfasdfasdfasdfasdasdf"
+        username?.text = ""
         // Do any additional setup after loading the view.
     }
     

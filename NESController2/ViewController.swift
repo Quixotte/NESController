@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let url = NSURL(string: "http://www.stackoverflow.com")
+    let myurl = "http://192.168.2.25:8001/marioserver"
+    
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
@@ -42,30 +43,41 @@ class ViewController: UIViewController {
                 {
             case .Left:
                 println("Pressed Left")
-                var buttonPressed = "pressedLeft"
+                buttonPressed = "left"
             case .Right:
                 println("Pressed Right")
-                var buttonPressed = "pressedRight"
+                buttonPressed = "right"
             case .Fire:
                 println("Pressed Fire")
-                var buttonPressed = "pressedFire"
+                buttonPressed = "fire"
             case .Jump:
                 println("Pressed Jump")
-                var buttonPressed = "pressedJump"
+                buttonPressed = "jump"
             default:
                 println("Untagged button pressed")
-                var buttonPressed = "unknownButtonPressed"
+                buttonPressed = "unknownButtonPressed"
             }
-            var NESparams = ["buttonPressed":buttonPressed, "username":username] as Dictionary<String, String>
+            var NESparams = ["option":"pressButtons",  "command":buttonPressed, "name":username] as Dictionary<String, String>
             
-            let succes = sendHttpPost(url, params: NESparams)
-            if (succes == true){
-                println("yay")
-            }
+            post(NESparams, url: myurl)
         }
     }
+
     
-    func sendHttpPost(url: NSURL, params: Dictionary<String, String>) -> Bool{
+    func post(params : Dictionary<String, String>, url : String) {
+        
+        var myUrl = url
+        myUrl += "?"
+        for k in params.keys
+        {
+            println(k)
+            myUrl += k + "=" + params[k]! + "&"
+        }
+        
+        myUrl = myUrl.substringToIndex(myUrl.endIndex.predecessor())
+        println(myUrl)
+        
+        /*
         var request = NSMutableURLRequest(URL: url)
         var session = NSURLSession.sharedSession()
         request.HTTPMethod = "POST"
@@ -76,9 +88,9 @@ class ViewController: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
         var task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-            //println("Response: \(response)")
+            println("Response: \(response)")
             var strData = NSString(data: data, encoding: NSUTF8StringEncoding)
-            //println("Body: \(strData)")
+            println("Body: \(strData)")
             var err: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: .MutableLeaves, error: &err) as? NSDictionary
             
@@ -94,7 +106,7 @@ class ViewController: UIViewController {
                 if let parseJSON = json {
                     // Okay, the parsedJSON is here, let's get the value for 'success' out of it
                     var success = parseJSON["success"] as? Int
-                    //println("Succes: \(success)")
+                    println("Succes: \(success)")
                 }
                 else {
                     // Woa, okay the json object was nil, something went worng. Maybe the server isn't running?
@@ -105,7 +117,7 @@ class ViewController: UIViewController {
         })
         
         task.resume()
-        return true
+*/
     }
 }
 
