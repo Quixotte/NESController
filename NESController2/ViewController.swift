@@ -27,24 +27,54 @@ class ViewController: UIViewController {
     @IBOutlet weak var textview: UITextView!
     @IBOutlet weak var leftButton: UIButton!
     
-    var pressedLeft = false;
+    var pressedLeft = true;
     var pressedRight = false;
     var pressedFire = false;
-    var pressedJump = false;
+    var pressedJump = true;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
-        let imageView = UIImageView(image: testImage)
-        self.view.addSubview(imageView)
         self.leftButton.setBackgroundImage(leftImage, forState:.Normal)
         self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Highlighted)
         self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Selected)
         self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Reserved)
-                self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Disabled)
+        self.leftButton.setBackgroundImage(leftImageHighlighted,forState:UIControlState.Disabled)
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
 
+
+    func update() {
+        
+        var command: String = ""
+        if pressedRight{
+            command = command + "right"
+        }
+        else if pressedLeft{
+            command = command + "left"
+        }
+        if pressedJump {
+            command = command + "jump"
+        }
+        if pressedFire {
+            command = command + "fire"
+        }
+        if (queue.operationCount == 0)
+        {
+            var NESparams = ["option":"pressButtons",  "command":command, "name":username] as Dictionary<String, String>
+            let requestSender = HttpRequestSender(params: NESparams, url: myurl)
+            queue.addOperation(requestSender)
+        }
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     @IBAction func touchDown(sender: AnyObject) {
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
 
@@ -70,7 +100,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchUpOutside(sender: AnyObject) {
-                touchUp(sender)
+        touchUp(sender)
     }
     @IBAction func touchUpInside(sender: AnyObject) {
         touchUp(sender)
@@ -100,10 +130,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     @IBAction func pressed(sender: AnyObject) {
         
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
