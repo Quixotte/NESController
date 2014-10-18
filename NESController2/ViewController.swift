@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     let queue = NSOperationQueue()
     
-    let testImage = UIImage(named: "leftarrow.jpg")
+    let testImage = UIImage(named: "background_nes.jpg")
     
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
-        
+        let imageView = UIImageView(image: testImage)
+        self.view.addSubview(imageView)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
