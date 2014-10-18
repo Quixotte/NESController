@@ -41,7 +41,7 @@
 		0707DE5219F0039A0078D787 /* NESController2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESController2Tests.swift; sourceTree = "<group>"; };
 		07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestSender.swift; sourceTree = "<group>"; };
 		079BE0D519F08D7700D5947D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rightarrow.jpeg; path = NESController2/Images.xcassets/rightarrow.jpeg; sourceTree = "<group>"; };
+		07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rightarrow.jpeg; path = Images.xcassets/rightarrow.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,6 @@
 		0707DE2E19F0039A0078D787 = {
 			isa = PBXGroup;
 			children = (
-				07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */,
 				0707DE3919F0039A0078D787 /* NESController2 */,
 				0707DE4F19F0039A0078D787 /* NESController2Tests */,
 				0707DE3819F0039A0078D787 /* Products */,
@@ -99,6 +98,7 @@
 		0707DE3A19F0039A0078D787 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				07ED6C5419F068CB00AA30A0 /* rightarrow.jpeg */,
 				0707DE3B19F0039A0078D787 /* Info.plist */,
 			);
 			name = "Supporting Files";

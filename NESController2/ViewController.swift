@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     
     let queue = NSOperationQueue()
     
+    let testImage = UIImage(named: "leftarrow.jpg")
+    
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
