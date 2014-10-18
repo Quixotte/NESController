@@ -27,7 +27,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var textview: UITextView!
     @IBOutlet weak var leftButton: UIButton!
     
-    
+    var pressedLeft = false;
+    var pressedRight = false;
+    var pressedFire = false;
+    var pressedJump = false;
     override func viewDidLoad() {
         super.viewDidLoad()
         textview.text = username
@@ -43,8 +46,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchDown(sender: AnyObject) {
-        
+        if let buttonType = ButtonTypes.fromRaw(sender.tag){
+
+            switch(buttonType)
+                {
+            case .Left:
+                println("Pressed Left")
+                pressedLeft = true;
+            case .Right:
+                println("Pressed Right")
+                pressedRight = true;
+            case .Fire:
+                println("Pressed Fire")
+                pressedFire = true;
+            case .Jump:
+                println("Pressed Jump")
+                pressedJump = true;
+            default:
+                println("Untagged button pressed")
+            }
+        }
+
     }
+    
     @IBAction func touchUpOutside(sender: AnyObject) {
                 touchUp(sender)
     }
@@ -54,7 +78,27 @@ class ViewController: UIViewController {
     
     func touchUp(sender: AnyObject)
     {
-        
+        if let buttonType = ButtonTypes.fromRaw(sender.tag){
+            var buttonPressed = "noButtonPressed"
+            switch(buttonType)
+                {
+            case .Left:
+                println("Unpressed Left")
+                
+            case .Right:
+                println("Unpressed Right")
+                buttonPressed = "right"
+            case .Fire:
+                println("Unpressed Fire")
+                buttonPressed = "fire"
+            case .Jump:
+                println("Unpressed Jump")
+                buttonPressed = "jump"
+            default:
+                println("Unpressed untagged button")
+                buttonPressed = "unknownButtonPressed"
+            }
+        }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
