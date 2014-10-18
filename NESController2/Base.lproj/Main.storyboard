@@ -162,7 +162,7 @@
                                     <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
                                     <constraint firstAttribute="height" constant="75" id="gT4-FQ-kB1"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="left_d_pad">
+                                <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -188,6 +188,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="0GB-cg-N6G"/>
                     <connections>
+                        <outlet property="leftButton" destination="LQb-26-bd1" id="H7j-D7-Afn"/>
                         <outlet property="textview" destination="qBK-wl-t2W" id="hoc-D3-nJ3"/>
                     </connections>
                 </viewController>
@@ -215,7 +216,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="left_d_pad" width="295" height="200"/>
         <image name="nes_red_button" width="183" height="175"/>
         <image name="right_d_pad" width="296" height="198"/>
     </resources>

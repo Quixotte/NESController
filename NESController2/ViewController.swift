@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         case Left = 1, Right, Fire, Jump
     }
     
+@IBOutlet weak var leftButton: UIButton!
     var username = "no_username"
     
     @IBOutlet weak var textview: UITextView!
@@ -30,7 +31,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
-        
+      //          let image = [UIImage ImageNamed "AppIcon"];
+        var i = UIImage(named: "AppIcon")
+        leftButton.setImage(i,forState:UIControlState.Normal)
+      //  leftButton.setImage(i,forState:UIControlState.Highlighted)
+        leftButton.setImage(i, forState:.Normal)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
