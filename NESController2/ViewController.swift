@@ -70,29 +70,5 @@ class ViewController: UIViewController {
             }
         }
     }
-
-    
-    
-    func post(params : Dictionary<String, String>, url : String) {
-        
-        var myUrl = url
-        myUrl += "?"
-        for k in params.keys
-        {
-            println(k)
-            myUrl += k + "=" + params[k]! + "&"
-        }
-        
-        myUrl = myUrl.substringToIndex(myUrl.endIndex.predecessor())
-        println(myUrl)
-        
-        var url = NSURL(string: myUrl)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
-            println(NSString(data: data, encoding: NSUTF8StringEncoding))
-        }
-        task.resume()
-    }
-    
 }
 
