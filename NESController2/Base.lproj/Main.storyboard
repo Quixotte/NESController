@@ -80,7 +80,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background_nes" translatesAutoresizingMaskIntoConstraints="NO" id="khZ-Ud-nmN">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_nes" translatesAutoresizingMaskIntoConstraints="NO" id="khZ-Ud-nmN">
                                 <rect key="frame" x="0.0" y="30" width="600" height="492"/>
                             </imageView>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-4p-Jmo">
@@ -106,8 +106,9 @@
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="0LF-2Y-z0K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-Hh-Y4d">
                                 <rect key="frame" x="138" y="262" width="100" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="IYD-G2-RXO"/>
                                 </constraints>
@@ -115,8 +116,14 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="svB-M8-3n4"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="QrG-Lo-eth"/>
                                     <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Q5c-UJ-quY"/>
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="9PQ-xx-gJz"/>
                                 </connections>
@@ -159,11 +166,11 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="JSj-IQ-Qk2"/>
+                                    <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ce5-qB-oky"/>
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="IDf-FI-UmA"/>
-                                    <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="j30-dG-3WP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQb-26-bd1">
                                 <rect key="frame" x="38" y="262" width="100" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="KEV-EQ-a4e"/>
@@ -174,7 +181,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="0NQ-bH-oFh"/>
+                                    <action selector="touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="2el-yi-Rxd"/>
                                     <action selector="touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="59w-KU-O6J"/>
                                     <action selector="touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="9Ig-bX-kPp"/>
                                 </connections>
@@ -187,9 +194,9 @@
                             <constraint firstItem="LQb-26-bd1" firstAttribute="width" secondItem="6Hs-Hh-Y4d" secondAttribute="width" id="7VE-kX-kb5"/>
                             <constraint firstAttribute="centerY" secondItem="LQb-26-bd1" secondAttribute="centerY" id="Laq-u2-9pm"/>
                             <constraint firstAttribute="width" secondItem="khZ-Ud-nmN" secondAttribute="width" id="O6L-dg-JO4"/>
-                            <constraint firstAttribute="height" secondItem="khZ-Ud-nmN" secondAttribute="height" id="PRR-jm-2S6"/>
+                            <constraint firstAttribute="height" secondItem="khZ-Ud-nmN" secondAttribute="height" constant="108" id="PRR-jm-2S6"/>
                             <constraint firstAttribute="centerY" secondItem="4Kk-4p-Jmo" secondAttribute="centerY" id="RHf-Kx-rb9"/>
-                            <constraint firstItem="LQb-26-bd1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XS2-4a-ADR"/>
+                            <constraint firstItem="LQb-26-bd1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="XS2-4a-ADR"/>
                             <constraint firstItem="LQb-26-bd1" firstAttribute="top" secondItem="6Hs-Hh-Y4d" secondAttribute="top" id="bpF-67-2l0"/>
                             <constraint firstAttribute="centerX" secondItem="qBK-wl-t2W" secondAttribute="centerX" constant="-0.5" id="gi9-92-i15"/>
                             <constraint firstItem="khZ-Ud-nmN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="oXY-BL-T8o"/>
@@ -201,7 +208,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="0GB-cg-N6G"/>
                     <connections>
-                        <outlet property="leftButton" destination="LQb-26-bd1" id="0YZ-5x-qHM"/>
                         <outlet property="textview" destination="qBK-wl-t2W" id="hoc-D3-nJ3"/>
                     </connections>
                 </viewController>
