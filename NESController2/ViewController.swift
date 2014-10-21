@@ -84,6 +84,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchDown(sender: AnyObject) {
+        /*
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
             switch(buttonType)
                 {
@@ -102,7 +103,7 @@ class ViewController: UIViewController {
             default:
                 println("Untagged button pressed")
             }
-        }
+        }*/
 
     }
     
@@ -115,6 +116,7 @@ class ViewController: UIViewController {
     
     func touchUp(sender: AnyObject)
     {
+        /*
         if let buttonType = ButtonTypes.fromRaw(sender.tag){
             switch(buttonType)
                 {
@@ -133,7 +135,7 @@ class ViewController: UIViewController {
             default:
                 println("Released untagged button ")
             }
-        }
+        }*/
     }
 }
 
