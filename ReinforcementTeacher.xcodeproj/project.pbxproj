@@ -32,14 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0707DE3719F0039A0078D787 /* NESController2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NESController2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0707DE3719F0039A0078D787 /* ReinforcementTeacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReinforcementTeacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0707DE3B19F0039A0078D787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0707DE3C19F0039A0078D787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0707DE3E19F0039A0078D787 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0707DE4119F0039A0078D787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0707DE4319F0039A0078D787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0707DE4619F0039A0078D787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0707DE4C19F0039A0078D787 /* NESController2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESController2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0707DE4C19F0039A0078D787 /* ReinforcementTeacherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReinforcementTeacherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0707DE5119F0039A0078D787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0707DE5219F0039A0078D787 /* NESController2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NESController2Tests.swift; sourceTree = "<group>"; };
 		07341D2319F2A5B1009F7093 /* HttpRequestSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestSender.swift; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		0707DE3819F0039A0078D787 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0707DE3719F0039A0078D787 /* NESController2.app */,
-				0707DE4C19F0039A0078D787 /* NESController2Tests.xctest */,
+				0707DE3719F0039A0078D787 /* ReinforcementTeacher.app */,
+				0707DE4C19F0039A0078D787 /* ReinforcementTeacherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0707DE3619F0039A0078D787 /* NESController2 */ = {
+		0707DE3619F0039A0078D787 /* ReinforcementTeacher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0707DE5619F0039A0078D787 /* Build configuration list for PBXNativeTarget "NESController2" */;
+			buildConfigurationList = 0707DE5619F0039A0078D787 /* Build configuration list for PBXNativeTarget "ReinforcementTeacher" */;
 			buildPhases = (
 				0707DE3319F0039A0078D787 /* Sources */,
 				0707DE3419F0039A0078D787 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = NESController2;
+			name = ReinforcementTeacher;
 			productName = NESController2;
-			productReference = 0707DE3719F0039A0078D787 /* NESController2.app */;
+			productReference = 0707DE3719F0039A0078D787 /* ReinforcementTeacher.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0707DE4B19F0039A0078D787 /* NESController2Tests */ = {
+		0707DE4B19F0039A0078D787 /* ReinforcementTeacherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0707DE5919F0039A0078D787 /* Build configuration list for PBXNativeTarget "NESController2Tests" */;
+			buildConfigurationList = 0707DE5919F0039A0078D787 /* Build configuration list for PBXNativeTarget "ReinforcementTeacherTests" */;
 			buildPhases = (
 				0707DE4819F0039A0078D787 /* Sources */,
 				0707DE4919F0039A0078D787 /* Frameworks */,
@@ -163,9 +163,9 @@
 			dependencies = (
 				0707DE4E19F0039A0078D787 /* PBXTargetDependency */,
 			);
-			name = NESController2Tests;
+			name = ReinforcementTeacherTests;
 			productName = NESController2Tests;
-			productReference = 0707DE4C19F0039A0078D787 /* NESController2Tests.xctest */;
+			productReference = 0707DE4C19F0039A0078D787 /* ReinforcementTeacherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0707DE3219F0039A0078D787 /* Build configuration list for PBXProject "NESController2" */;
+			buildConfigurationList = 0707DE3219F0039A0078D787 /* Build configuration list for PBXProject "ReinforcementTeacher" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,8 +199,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0707DE3619F0039A0078D787 /* NESController2 */,
-				0707DE4B19F0039A0078D787 /* NESController2Tests */,
+				0707DE3619F0039A0078D787 /* ReinforcementTeacher */,
+				0707DE4B19F0039A0078D787 /* ReinforcementTeacherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -254,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		0707DE4E19F0039A0078D787 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0707DE3619F0039A0078D787 /* NESController2 */;
+			target = 0707DE3619F0039A0078D787 /* ReinforcementTeacher */;
 			targetProxy = 0707DE4D19F0039A0078D787 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -362,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NESController2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReinforcementTeacher;
 			};
 			name = Debug;
 		};
@@ -372,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NESController2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReinforcementTeacher;
 			};
 			name = Release;
 		};
@@ -390,7 +390,7 @@
 				);
 				INFOPLIST_FILE = NESController2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReinforcementTeacherTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESController2.app/NESController2";
 			};
 			name = Debug;
@@ -405,7 +405,7 @@
 				);
 				INFOPLIST_FILE = NESController2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ReinforcementTeacherTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESController2.app/NESController2";
 			};
 			name = Release;
@@ -413,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0707DE3219F0039A0078D787 /* Build configuration list for PBXProject "NESController2" */ = {
+		0707DE3219F0039A0078D787 /* Build configuration list for PBXProject "ReinforcementTeacher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0707DE5419F0039A0078D787 /* Debug */,
@@ -422,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0707DE5619F0039A0078D787 /* Build configuration list for PBXNativeTarget "NESController2" */ = {
+		0707DE5619F0039A0078D787 /* Build configuration list for PBXNativeTarget "ReinforcementTeacher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0707DE5719F0039A0078D787 /* Debug */,
@@ -431,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0707DE5919F0039A0078D787 /* Build configuration list for PBXNativeTarget "NESController2Tests" */ = {
+		0707DE5919F0039A0078D787 /* Build configuration list for PBXNativeTarget "ReinforcementTeacherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0707DE5A19F0039A0078D787 /* Debug */,
