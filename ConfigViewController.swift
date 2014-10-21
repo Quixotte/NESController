@@ -10,13 +10,19 @@ import UIKit
 
 class ConfigViewController: UIViewController {
 
-    @IBOutlet weak var ipadressfield: UITextField!
+
+    @IBOutlet weak var ipfield: UITextField!
     
-    var ip: String = ""
+    var delegate: ViewController? = nil
+    
+    var myip: NSString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ipadressfield.text = ip
+        println("loaded config view")
+        if ipfield != nil {
+            ipfield.text = myip
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +31,27 @@ class ConfigViewController: UIViewController {
     }
     
     
+    @IBAction func submit(sender: UIButton) {
+        if delegate != nil{
+            delegate!.myip = ipfield.text
+        }
+        else {
+            println("nopediedoop")
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "returnToViewControllerSegue"{
+            let vc = segue.destinationViewController as ViewController
+            if let ip = ipfield?.text? {
+                println("setting ip")
+                vc.myip = ip
+            } else {
+                return
+            }
+        }
+    }
+
 
     /*
     // MARK: - Navigation

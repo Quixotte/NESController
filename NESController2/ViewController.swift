@@ -11,16 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     let prefix = "http://"
-    let ip = "192.168.2.25:8001"
+    var myip = "192.168.2.25:8001"
     let serveradress = "/marioserver"
     
     let host = "192.168.2.25:8001"
     
     let queue = NSOperationQueue()
     
-    let testImage = UIImage(named: "background_nes.jpg")
-    let leftImage = UIImage(named: "left_d_pad.png")
-    let leftImageHighlighted = UIImage(named: "left_d_pad_pressed.png")
     //these indices correspond to the tag values
     enum ButtonTypes: Int {
         case Left = 1, Right, Fire, Jump
@@ -39,11 +36,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         textview.text = username
         textview.textAlignment = .Center
-
+        println("ip: " + myip)
         // Do any additional setup after loading the view, typically from a nib.
         //var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "configSegue"{
+            println("sequeing")
+            let vc = segue.destinationViewController as ConfigViewController
+            vc.myip = myip
+            vc.delegate = self
+        }
+    }
 
     func update() {
         
@@ -63,11 +69,13 @@ class ViewController: UIViewController {
         if (queue.operationCount == 0)
         {
             var NESparams = ["option":"pressButtons",  "command":command, "name":username] as Dictionary<String, String>
-            let myurl = prefix + ip + serveradress
+            let myurl = prefix + myip + serveradress
             let requestSender = HttpRequestSender(params: NESparams, url: myurl)
             queue.addOperation(requestSender)
         }
     }
+    
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -123,7 +131,7 @@ class ViewController: UIViewController {
                 println("Released Jump")
                 pressedJump = false;
             default:
-                println("Released untagged butto ")
+                println("Released untagged button ")
             }
         }
     }
