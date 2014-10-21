@@ -41,8 +41,15 @@ class HttpRequestSender: NSOperation {
             
             var url = NSURL(string: myUrl)
             
-            let task = NSURLSession.sharedSession().dataTaskWithURL(url) {(data, response, error) in
-                println(NSString(data: data, encoding: NSUTF8StringEncoding))
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+                if(error==nil)
+                {
+                    println(NSString(data: data, encoding: NSUTF8StringEncoding))
+                }
+                else
+                {
+                    println("There was a very huge problem!");
+                }
             }
             task.resume()
             available = true
