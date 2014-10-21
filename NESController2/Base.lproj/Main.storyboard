@@ -80,6 +80,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background_nes" translatesAutoresizingMaskIntoConstraints="NO" id="irm-Es-h8R">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-4p-Jmo">
                                 <rect key="frame" x="484" y="262" width="100" height="75"/>
                                 <color key="backgroundColor" red="0.89438264270000001" green="0.20979345939999999" blue="0.20979345939999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -203,11 +206,15 @@
                             <constraint firstItem="4Kk-4p-Jmo" firstAttribute="leading" secondItem="Lin-ce-KmL" secondAttribute="trailing" constant="20" id="226-4e-lyz"/>
                             <constraint firstItem="6Hs-Hh-Y4d" firstAttribute="top" secondItem="qBK-wl-t2W" secondAttribute="bottom" constant="34" id="69F-TD-Xhu"/>
                             <constraint firstItem="LQb-26-bd1" firstAttribute="width" secondItem="6Hs-Hh-Y4d" secondAttribute="width" id="7VE-kX-kb5"/>
+                            <constraint firstAttribute="height" secondItem="irm-Es-h8R" secondAttribute="height" id="FlN-qz-ab2"/>
+                            <constraint firstAttribute="centerY" secondItem="irm-Es-h8R" secondAttribute="centerY" id="LD8-ok-EFH"/>
                             <constraint firstAttribute="centerY" secondItem="LQb-26-bd1" secondAttribute="centerY" id="Laq-u2-9pm"/>
                             <constraint firstAttribute="centerY" secondItem="4Kk-4p-Jmo" secondAttribute="centerY" id="RHf-Kx-rb9"/>
+                            <constraint firstAttribute="width" secondItem="irm-Es-h8R" secondAttribute="width" id="Tz4-ak-KLv"/>
                             <constraint firstItem="LQb-26-bd1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XS2-4a-ADR"/>
                             <constraint firstItem="LQb-26-bd1" firstAttribute="top" secondItem="6Hs-Hh-Y4d" secondAttribute="top" id="bpF-67-2l0"/>
                             <constraint firstAttribute="centerX" secondItem="qBK-wl-t2W" secondAttribute="centerX" constant="-0.5" id="gi9-92-i15"/>
+                            <constraint firstAttribute="centerX" secondItem="irm-Es-h8R" secondAttribute="centerX" id="mYC-SY-MyE"/>
                             <constraint firstItem="8LE-3X-xuw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ofv-KL-IH2"/>
                             <constraint firstItem="Lin-ce-KmL" firstAttribute="top" secondItem="4Kk-4p-Jmo" secondAttribute="top" id="uq6-7U-spf"/>
                             <constraint firstItem="4Kk-4p-Jmo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="x7o-Rm-Wos"/>
@@ -315,6 +322,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background_nes" width="535" height="189"/>
         <image name="left_d_pad" width="295" height="200"/>
         <image name="nes_red_button" width="183" height="175"/>
         <image name="right_d_pad" width="296" height="198"/>
