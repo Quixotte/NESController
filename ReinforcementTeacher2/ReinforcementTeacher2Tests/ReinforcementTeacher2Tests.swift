@@ -1,6 +1,6 @@
 //
-//  ReinforcementTeacherTests.swift
-//  ReinforcementTeacherTests
+//  ReinforcementTeacher2Tests.swift
+//  ReinforcementTeacher2Tests
 //
 //  Created by Stef Janssen on 23/10/14.
 //  Copyright (c) 2014 Stef Janssen. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class ReinforcementTeacherTests: XCTestCase {
+class ReinforcementTeacher2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

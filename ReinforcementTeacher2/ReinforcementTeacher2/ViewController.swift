@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ReinforcementTeacher
+//  ReinforcementTeacher2
 //
 //  Created by Stef Janssen on 23/10/14.
 //  Copyright (c) 2014 Stef Janssen. All rights reserved.
