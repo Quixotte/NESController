@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07FAF9DF19F97F0900CE9170"
+               BlueprintIdentifier = "07FAFA1019F97FBA00CE9170"
                BuildableName = "ReinforcementTeacher.app"
                BlueprintName = "ReinforcementTeacher"
                ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07FAF9F719F97F0900CE9170"
+               BlueprintIdentifier = "07FAFA2819F97FBA00CE9170"
                BuildableName = "ReinforcementTeacherTests.xctest"
                BlueprintName = "ReinforcementTeacherTests"
                ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07FAF9F719F97F0900CE9170"
+               BlueprintIdentifier = "07FAFA2819F97FBA00CE9170"
                BuildableName = "ReinforcementTeacherTests.xctest"
                BlueprintName = "ReinforcementTeacherTests"
                ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07FAF9DF19F97F0900CE9170"
+            BlueprintIdentifier = "07FAFA1019F97FBA00CE9170"
             BuildableName = "ReinforcementTeacher.app"
             BlueprintName = "ReinforcementTeacher"
             ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07FAF9DF19F97F0900CE9170"
+            BlueprintIdentifier = "07FAFA1019F97FBA00CE9170"
             BuildableName = "ReinforcementTeacher.app"
             BlueprintName = "ReinforcementTeacher"
             ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "07FAF9DF19F97F0900CE9170"
+            BlueprintIdentifier = "07FAFA1019F97FBA00CE9170"
             BuildableName = "ReinforcementTeacher.app"
             BlueprintName = "ReinforcementTeacher"
             ReferencedContainer = "container:ReinforcementTeacher.xcodeproj">
